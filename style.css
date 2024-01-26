@@ -1,0 +1,420 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ロゴコンテナのスタイル */
+.logo-container {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 垂直方向の中央揃え */
+    padding: 10px; /* パディングを増やす */
+    border: 3px solid #333; /* 太い枠線に変更 */
+    position: absolute; /* 絶対位置指定 */
+    top: 20px; /* 上から20px */
+    left: 20px; /* 左から20px */
+    background-color: white; /* 背景色を白に */
+}
+
+/* ロゴのスタイル */
+.logo {
+    height: 60px; /* ロゴの高さを大きくする */
+    margin-right: 10px; /* ロゴとジム名の間のマージンを増やす */
+}
+
+/* ジム名のスタイル */
+.gym-name {
+    font-size: 1.2em; /* フォントサイズを大きくする */
+    font-weight: bold; /* ボールドフォントに */
+    font-family: 'Arial', sans-serif; /* 魅力的なフォントに変更 */
+}
+
+/* ヒーローセクションのスタイル */
+#hero {
+    background-image: url('your-background-image.jpg'); /* 背景画像 */
+    background-size: cover; /* 背景画像をカバーとして設定 */
+    background-position: center; /* 背景画像を中央に配置 */
+    color: #ECFFEC; /* 非常に薄い緑色 */
+    text-align: center; /* テキストを中央揃えに */
+    padding: 100px 0; /* 上下のパディングを追加 */
+}
+
+#hero h1 {
+    font-size: 3em; /* タイトルのフォントサイズを大きくする */
+    margin-bottom: 20px; /* タイトルの下のマージン */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストに影を追加 */
+}
+
+#hero p {
+    font-size: 1.5em; /* テキストのフォントサイズを大きくする */
+    max-width: 600px; /* 最大幅を設定 */
+    margin: 0 auto; /* 中央揃え */
+    line-height: 1.4; /* 行間を設定 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* サービスの概要のスタイル */
+#services {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#services h2 {
+    font-size: 3em; /* 見出しのフォントサイズを大きくする */
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 30px;
+    position: relative; /* ポジショニングの基準とする */
+    border: 2px solid black; /* 黒い枠を追加 */
+    display: inline-block; /* インラインブロック要素として表示 */
+}
+
+.service img {
+    width: 80%; /* 画像のサイズを小さくする */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* 画像を中央に配置 */
+}
+
+.service button {
+    background-color: #6CC24A;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    font-weight: bold; 
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* 絶対位置指定 */
+    top: 50%; /* 中央に配置 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 位置を調整 */
+    display: block;
+}
+
+/* キャンペーン提供セクションのスタイル */
+#campaign {
+    background-color: #ECFFEC; /* ライトグリーンの背景 */
+    padding: 20px;
+    text-align: center; /* テキストを中央揃えに */
+}
+
+/* 特別キャンペーンのテキストスタイル */
+#campaign h2 {
+    font-size: 2.8em; /* フォントサイズをさらに大きく */
+    color: #FF0000; /* 赤色 */
+    text-shadow: 2px 2px 4px #000000; /* テキストに影を追加 */
+    padding: 15px; /* パディングを増やす */
+    border: 2px solid #ff4500; /* 細い赤色の枠 */
+    border-radius: 15px; /* 枠を丸く */
+    display: inline-block; /* インラインブロック表示 */
+    margin: 10px 0; /* マージンを追加 */
+}
+
+/* キャンペーンテキストのスタイル */
+.campaign-text {
+    font-size: 2.4em; /* フォントサイズを大きく */
+    color: #000000; /* 黒色 */
+    font-weight: bold; /* ボールドフォント */
+    margin: 10px 0; /* マージン */
+    display: inline-block; /* インラインブロック表示 */
+    background-color: #ffff99; /* ハイライト用の黄色 */
+    padding: 5px 10px; /* パディングを追加 */
+    border-radius: 5px; /* 角を丸く */
+}
+
+/* キャンペーン画像のスタイル */
+.one-month-free {
+    height: 80px; /* 画像の高さを小さく */
+    vertical-align: middle; /* テキストと垂直中央揃え */
+    margin-left: 15px; /* 左のマージン */
+}
+
+/* コールトゥアクションのスタイル */
+#cta {
+    background-color: #98FB98; /* 薄い緑色の背景 */
+    padding: 40px 0; /* 上下のパディング */
+    text-align: center;
+}
+
+#cta button {
+    background-color: #F5F5DC; /* ベージュ色の背景（「今すぐ申し込む」ボタン） */
+    color: #000000; /* テキスト色は黒 */
+    border: none;
+    padding: 20px 40px; /* パディングを増やしてボタンを大きくする */
+    font-size: 1.5em; /* フォントサイズを大きくする */
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px; /* ボタン間のマージン */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 色と影の変化にアニメーションを適用 */
+}
+
+/* 「無料体験」ボタンのホバースタイル */
+#cta button:nth-of-type(1):hover {
+    background-color: #E5E5A0; /* ベージュ色を少し濃くする */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 浮いているように見える影を追加 */
+}
+
+/* ターゲット顧客のセクションのスタイル */
+#target-customers {
+    background-color: 
+    padding: 40px 0; /* 上下のパディング */
+    text-align: center; /* テキストを中央揃えに */
+}
+
+#target-customers h2 {
+    font-size: 2.5em; /* タイトルのフォントサイズを大きくする */
+    font-weight: bold; /* タイトルを太字にする */
+    margin-bottom: 20px; /* タイトルの下のマージン */
+    font-family: 'Arial', sans-serif; /* フォントファミリーを設定 */
+}
+
+#target-customers p {
+    font-size: 1.5em; /* パラグラフのフォントサイズを大きくする */
+    font-weight: bold; /* パラグラフを太字にする */
+    font-family: 'Verdana', sans-serif; /* フォントファミリーを設定 */
+    max-width: 600px; /* パラグラフの最大幅を設定 */
+    margin: 0 auto; /* 中央揃え */
+    line-height: 1.6; /* 行間を設定 */
+}
+
+.customer-images {
+    text-align: center; /* 中央揃え */
+    margin-top: 20px; /* テキストとの間隔 */
+}
+
+.customer-images img {
+    width: 30%; /* 画像の幅を30%に設定 */
+    height: auto; /* 高さを自動調整 */
+    margin: 0 1.5%; /* 左右に1.5%のマージンを設定 */
+    display: inline-block; /* 画像を横並びに表示 */
+    vertical-align: top; /* 画像を上揃えにする */
+}
+
+/* ユーザー体験談のスタイル */
+#testimonials {
+    background-color: #D0E4FE; /* ソフトな青の背景色 */
+    padding: 60px 0; /* 上下のパディングを増やす */
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin-bottom: 40px; /* ヘッダーの下のマージンを増やす */
+    font-size: 3em;
+}
+
+#testimonials div {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* アイテムを中央揃えに */
+    justify-content: center; /* アイテムを中央寄せに */
+    max-width: 1000px; /* コンテナの最大幅を増やす */
+    margin: auto; /* 中央揃え */
+    gap: 40px; /* 画像とテキストの間隔を増やす */
+}
+
+#testimonials img {
+    max-width: 50%; /* 画像の最大幅を増やす */
+    height: auto; /* 高さを自動調整 */
+}
+
+#testimonials p {
+    max-width: 50%; /* テキストの最大幅を増やす */
+    text-align: left; /* テキストを左揃えに */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 特徴的なフォント */
+    font-size: 1.2em; /* フォントサイズ */
+}
+
+/* ターゲット顧客のセクションのスタイル */
+#target-customers {
+    /* 既存のスタイル */
+}
+
+/* 画像のスタイリング */
+.customer-images {
+    text-align: center; /* 中央揃え */
+    margin-top: 20px; /* テキストとの間隔 */
+}
+
+.customer-images img {
+    max-width: 45%; /* 画像の最大幅を設定 */
+    height: auto; /* 高さを自動調整 */
+    margin: 0 2.5%; /* 両側にマージンを設定 */
+}
+
+/* 会員プランと価格セクションのスタイル */
+#pricing {
+    background-color: #0056B3; /* バックグラウンドカラー */
+    color: #FFFFFF; /* テキストカラー */
+    font-weight: bold; /* ボールドフォント */
+    padding: 20px; /* セクションのパディング */
+    text-align: center; /* テキストを中央揃えに */
+}
+
+#pricing h2 {
+    font-size: 3em;
+}
+
+/* 全てのプランの共通スタイル */
+.plan {
+    display: inline-block; /* インラインブロック要素に変更 */
+    margin-bottom: 15px; /* 各プラン間のマージン */
+    border: 1px solid #FFFFFF; /* 白い境界線 */
+    padding: 10px; /* パディング */
+}
+
+/* スタンダードプランのスタイル */
+#pricing .plan:nth-of-type(1) { /* スタンダードプランは最初の.plan要素 */
+    font-size: 1.5em; /* フォントサイズをさらに大きく */
+    background-color: #0073E6; /* スタンダードプランの背景色を少し明るく */
+    text-shadow: 2px 2px 4px #000000; /* テキストに影を追加 */
+    padding: 15px; /* スタンダードプランのパディングを増やす */
+}
+
+/* 他のプランのスタイル */
+#pricing .plan:not(:nth-of-type(1)) { /* スタンダードプラン以外 */
+    font-size: 1em; /* フォントサイズを通常サイズに */
+}
+
+/* お問い合わせセクションのスタイル調整 */
+#contact {
+    min-height: 600px; /* 立幅の最小値を1100pxに設定 */
+    margin: auto; /* セクションを中央に配置 */
+    padding: 40px; /* 内部パディングを設定 */
+    background-color: #f2f2f2; /* 軽い背景色 */
+    text-align: center; /* テキストを中央揃えに */
+}
+
+/* フォーム要素のスタイル */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* 各フォーム要素間のマージン */
+    width: 75%; /* フォームの幅を80%に設定 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-1 {
+    width: auto;
+    padding: 100px 0 100px 0;
+}
+
+.contact-title {
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+/* ラベルのスタイル */
+label {
+    font-size: 25px;
+    margin-right: 10px; /* ラベルと入力フィールドの間の右マージン */
+    margin-bottom: 5px; /* ラベルと入力フィールドの間の下マージン */
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 80%; /* 幅を広げる */
+    padding: 20px 20px; /* パディングを増やして要素を大きくする */
+    font-size: 1.1em; /* フォントサイズを大きくする */
+    border: 1px solid #ccc; /* 境界線 */
+    border-radius: 4px; /* 角丸 */
+    box-sizing: border-box; /* ボックスサイズの計算方法 */
+}
+
+/* 送信ボタンのスタイル */
+button[type="submit"] {
+    width: 75%; /* 幅を80%に設定 */
+    background-color: #4CAF50; /* 背景色 */
+    color: white; /* 文字色 */
+    padding: 15px 30px; /* パディング */
+    margin: 8px auto; /* マージン */
+    border: none; /* 境界線なし */
+    border-radius: 4px; /* 境界線の角を丸く */
+    cursor: pointer; /* カーソルをポインターに */
+    font-size: 1.2em;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* ホバー時の背景色 */
+}
+
+/*  フッター */
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    max-width: 80px;
+    margin-bottom: 5px;
+}
+
+/* 1920ピクセル以上の画面用のスタイル */
+@media screen and (min-width: 1920px) {
+    body {
+        max-width: 1920px;
+        margin: 0 auto; /* 中央揃え */
+    }
+
+    /* 他の要素も同様に調整 */
+    /* 例えば、より大きなフォントサイズや異なる配置を指定することができます */
+}
+
+/* サービスの概要セクションのスタイル */
+#services {
+    display: flex; /* Flexboxコンテナにする */
+    flex-direction: column; /* 要素を縦方向に並べる */
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 内容を中央に寄せる */
+    padding: 40px 0; /* 上下のパディング */
+    text-align: center;
+}
+
+/* 各サービス項目のスタイル */
+.service {
+    margin-bottom: 30px; /* 各サービス項目間のマージン */
+    width: 80%; /* 幅を80%に設定 */
+    /* その他のスタイルはそのまま保持 */
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .service {
+        width: 100%; /* モバイル画面サイズで幅を100%に */
+    }
+}
+
+/* 会員プランと価格セクションのスタイル */
+#pricing {
+    display: flex; /* Flexboxコンテナを使用 */
+    flex-direction: column; /* 要素を縦方向に配置 */
+    align-items: center; /* 要素を中央に揃える */
+    padding: 20px; /* 適切なパディングを設定 */
+    text-align: center; /* テキストを中央揃えに */
+    background-color: #0056B3; /* 背景色を設定 */
+    color: #FFFFFF; /* テキスト色を設定 */
+}
+
+/* 各プランのスタイル */
+.plan {
+    width: 77%; /* 幅を100%に設定 */
+    margin-bottom: 20px; /* 各プラン間のマージン */
+    border: 1px solid #FFFFFF; /* 白い境界線を設定 */
+    padding: 10px; /* 適切なパディングを設定 */
+    box-sizing: border-box; /* ボックスサイズの計算方法を設定 */
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    #pricing {
+        /* モバイル画面サイズでの追加のスタイル調整が必要な場合 */
+    }
+}
